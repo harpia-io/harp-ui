@@ -62,7 +62,7 @@ export default {
   },
   computed: {
     dateTime () {
-      return DateTime.now().plus({ minutes: this.timer }).toISO()
+      return DateTime.utc().plus({ minutes: this.timer }).toISO()
     }
   },
   mounted () {

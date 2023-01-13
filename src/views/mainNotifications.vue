@@ -261,8 +261,8 @@ export default {
         order: true
       },
       historyFilters: {
-        from: DateTime.now().minus({ minutes: 180 }).toISO(),
-        to: DateTime.now().toISO()
+        from: DateTime.utc().minus({ minutes: 180 }).toISO(),
+        to: DateTime.utc().toISO()
       }
     },
     notificationObj: null,
@@ -492,7 +492,7 @@ export default {
         this.directionModel.historyFilters.to = time[1]
       } else {
         this.directionModel.historyFilters.from = time
-        this.directionModel.historyFilters.to = DateTime.now().toISO()
+        this.directionModel.historyFilters.to = DateTime.utc().toISO()
       }
       this.notificationsHistoryGet()
     },

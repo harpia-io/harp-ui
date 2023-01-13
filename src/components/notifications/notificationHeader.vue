@@ -219,8 +219,8 @@ export default {
   data () {
     return {
       globally: this.globalSearch,
-      // from: DateTime.now().minus({ minutes: 180 }).toISO(),
-      // to: DateTime.now().toISO()
+      // from: DateTime.utc().minus({ minutes: 180 }).toISO(),
+      // to: DateTime.utc().toISO()
       timer: 180,
       quickFilter: true,
       fromDate: null,
@@ -314,7 +314,7 @@ export default {
   methods: {
     onTimePeriodChange (date) {
       console.log('notificationHeader. onTimePeriodChange', date)
-      // const time = DateTime.now().minus({ minutes: this.timer }).toISO()
+      // const time = DateTime.utc().minus({ minutes: this.timer }).toISO()
       // const time = new Date(date).toISOString()
       this.$emit('on-update-search-period', date)
     },

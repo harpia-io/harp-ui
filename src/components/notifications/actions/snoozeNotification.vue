@@ -99,7 +99,7 @@ export default {
     },
     dateTime () {
       if (this.quickFilter) {
-        return DateTime.now().plus({ minutes: this.timer }).toISO()
+        return DateTime.utc().plus({ minutes: this.timer }).toISO()
       } else {
         return this.custom_datetime
       }
