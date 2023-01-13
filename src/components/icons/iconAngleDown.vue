@@ -1,0 +1,20 @@
+<template>
+  <svg width="11" height="6" viewbox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5.5 6L10.2631 0H0.73686L5.5 6Z" :fill="btnColor"/>
+  </svg>
+</template>
+
+<script>
+export default {
+  props: {
+    btnColor: {
+      type: String,
+      default: '#3C3C3C'
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>

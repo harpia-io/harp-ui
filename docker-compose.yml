@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  harp-ui-test:
+    build: .
+    environment:
+      - POD_NAME=harp-ui
+      - DOMAIN=https://playground.harpia.io
+      - GRAFANA_REPORTS=https://playground.harpia.io/grafana
+      - NAMESPACE=harpia
+      - SHOW_SIDE_PANEL=true
+      - DEMO_EMAIL=''
+      - DEMO_PASSWORD=''
+    ports:
+      - "8080:80"
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+    pull_policy: always

@@ -1,0 +1,19 @@
+{
+  "user_object": {
+    "user_nickname": "user_nick",
+    "first_name": "FirstName",
+    "second_name": "SecondName",
+    "email": "first_user@gmail.com",
+    "role": "admin",
+    "environments": [1, 5, 4],
+    "fields": [
+      "monitoring_system",
+      "name",
+      "description",
+      "source",
+      "object"
+    ],
+    "status": "active",
+    "password": "some_pass"
+  }
+}

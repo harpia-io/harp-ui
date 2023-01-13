@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Harp</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <script src="config.js" type="text/javascript"></script>
+<!--  <link rel="stylesheet" href="src/assets/css/media.css">-->
+<!--  <link rel="stylesheet" href="src/assets/css/style.css">-->
+</head>
+  <body>
+    <div class="app-view">
+      <div id="app"></div>
+    </div>
+
+<!--    <div class="too-small-resolution">-->
+<!--      <div>-->
+<!--        <p style="font-size: xx-large">-->
+<!--          Sorry, this link won't work on a phone or tablet-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="too-small-resolution__icons">-->
+<!--        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--             viewBox="0 0 474.23 474.23" style="width: 300px;" xml:space="preserve">-->
+<!--        <g>-->
+<!--        <path style="fill:rgba(2,2,2,0.68);" d="M413.92,32.577H60.309C27.051,32.577,0,59.627,0,92.884v236.611c0,33.259,27.051,60.31,60.309,60.31-->
+<!--          h188.755v-47.911H80.771V80.487H413.92c6.838,0,12.399,5.559,12.399,12.397v4.204h18.067c10.879,0,20.953,3.072,29.844,8.031-->
+<!--          V92.884C474.23,59.627,447.178,32.577,413.92,32.577z M41.361,233.886c-12.548,0-22.708-10.168-22.708-22.692-->
+<!--          c0-12.538,10.16-22.706,22.708-22.706c12.532,0,22.7,10.168,22.7,22.706C64.061,223.718,53.893,233.886,41.361,233.886z"/>-->
+<!--          <path style="fill:rgba(2,2,2,0.68);" d="M444.386,129.028H310.81c-16.432,0-29.805,13.374-29.805,29.803V411.85-->
+<!--          c0,16.43,13.374,29.803,29.805,29.803h133.577c16.43,0,29.804-13.374,29.804-29.803V158.831-->
+<!--          C474.19,142.401,460.816,129.028,444.386,129.028z M312.945,160.968h129.305v223.41H312.945V160.968z M363.048,411.125-->
+<!--          c0-8.04,6.511-14.552,14.534-14.552c8.055,0,14.574,6.512,14.574,14.552c0,8.031-6.519,14.558-14.574,14.558-->
+<!--          C369.559,425.683,363.048,419.156,363.048,411.125z"/>-->
+<!--        </g>-->
+<!--        </svg>-->
+
+<!--      </div>-->
+<!--      <div>-->
+<!--        <p style="font-size: large">-->
+<!--          Please open the application on a <span style="font-weight: bold">laptop</span> or <span style="font-weight: bold">desktop</span> computer-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
+    <!-- built files will be auto injected -->
+    <script>
+        (function(d,t) {
+            var BASE_URL="https://app.chatwoot.com";
+            var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=BASE_URL+"/packs/js/sdk.js";
+            g.defer = true;
+            g.async = true;
+            s.parentNode.insertBefore(g,s);
+            g.onload=function(){
+                window.chatwootSDK.run({
+                    websiteToken: 'wN8ZGAcEvMYAX6JGgpqwS3yJ',
+                    baseUrl: BASE_URL
+                })
+            }
+        })(document,"script");
+    </script>
+  </body>
+</html>
+
+<style>
+  document {
+    zoom: 0.9
+  }
+  /*.too-small-resolution {*/
+  /*    !*height: 100%;*!*/
+  /*    width: 100%;*/
+  /*    position: absolute;*/
+  /*    top: 50%;*/
+  /*    left: 50%;*/
+  /*    transform: translate(-50%, -50%);*/
+  /*    flex-direction: column;*/
+  /*}*/
+  /*.too-small-resolution p {*/
+  /*    width: 100%;*/
+  /*    text-align: center;*/
+  /*    font-size: x-large;*/
+
+  /*}*/
+  /*.too-small-resolution__icons{*/
+  /*    padding: 10px;*/
+  /*    display: flex;*/
+  /*    justify-content: center;*/
+  /*}*/
+  /*@media (min-width: 0) {*/
+  /*    .app-view {*/
+  /*        display: none;*/
+  /*    }*/
+  /*    .too-small-resolution {*/
+  /*        display: flex;*/
+  /*    }*/
+  /*}*/
+  /*@media (min-width: 720px) and (min-height: 480px){*/
+  /*    .app-view {*/
+  /*        display: block;*/
+  /*    }*/
+  /*    .too-small-resolution {*/
+  /*        display: none;*/
+  /*    }*/
+  /*}*/
+</style>

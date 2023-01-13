@@ -1,0 +1,42 @@
+/*.login__box {*/
+/*    position: static;*/
+/*    background: #EEEFF3;*/
+/*    width: 100px;*/
+/*    top: 10px;*/
+/*    left: 10px;*/
+/*}*/
+
+.login__box-btn {
+    display: block;
+    width: 100px;
+    padding: 10px 12px;
+    border: 1px solid #DFE1E4;
+    border-radius: 4px;
+}
+
+/*fieldset {*/
+/*    margin: 2em 0;*/
+/*    padding: 1em 2em;*/
+/*    border: solid 1px #ccc;*/
+/*    border-radius: 6px;*/
+/*    min-width: 200px;*/
+/*}*/
+
+legend {
+    font-size: 1.25em;
+    padding: 0 .25em;
+    color: #999;
+}
+
+.login__label {
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label {
+    margin-top: 0;
+}
+
+.login__label:first-of-type {
+    margin-top: 0;
+}

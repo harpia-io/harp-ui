@@ -1,0 +1,6 @@
+export const TRIGGER_ERROR = 'TRIGGER_ERROR'
+export const REPORT_ERROR = 'REPORT_ERROR'
+export const CLOSE_ERROR = 'CLOSE_ERROR'
+export const SHOW_ERROR = 'SHOW_ERROR'
+export const GET_CLIENT_INFO = 'GET_CLIENT_INFO'
+export const UPDATE_CLIENT_INFO = 'UPDATE_CLIENT_INFO'
