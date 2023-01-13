@@ -26,7 +26,11 @@
     <!--Ids list-->
     <div class="scenario-section__block-row">
       <fieldset class="scenario-section__block-row-item full-width">
-        <legend>Slack channel Ids:</legend>
+        <legend>Slack channel Ids:
+          <a :href="'https://docs.harpia.io/docs/scenarios-overview/slack'" target="_blank">
+            docs:
+          </a>
+        </legend>
         <slack-form
           v-for="(id, index) in actionDetails.ids" :key="index"
           :id="id"

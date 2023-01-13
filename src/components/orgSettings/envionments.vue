@@ -47,7 +47,7 @@
         <tr>
           <th class="env-table__id-column-header">Id</th>
           <th>Environment name</th>
-          <th>Default scenario </th>
+<!--          <th>Default scenario </th>-->
           <th>Users</th>
           <th>Actions</th>
         </tr>
@@ -61,7 +61,7 @@
           <!--Environment name-->
           <td>{{ envObj }}</td>
           <!--Default scenarios-->
-          <td>OPs default</td>
+<!--          <td>OPs default</td>-->
           <!--Users-->
           <td>All</td>
           <td>

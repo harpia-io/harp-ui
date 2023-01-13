@@ -10,29 +10,6 @@
           <legend>Scenario name</legend>
           <input type="text" name="Name" placeholder="Name" class="input__text input" v-model="scenarioName">
         </fieldset>
-
-        <!--      <fieldset>-->
-        <!--        <legend>Scenario type</legend>-->
-        <!--        <select-plugin name="environments" class="input__select input">-->
-        <!--          <option selected disabled>Type</option>-->
-        <!--          <option value="edit">Edit</option>-->
-        <!--          <option value="create">Create</option>-->
-        <!--          <option value="statistics">Statistics</option>-->
-        <!--          <option value="resetpass">Reset pass</option>-->
-        <!--        </select-plugin>-->
-        <!--      </fieldset>-->
-
-        <!--      <fieldset>-->
-        <!--        <legend>Tags</legend>-->
-        <!--        <input type="text" name="tags" placeholder="Tags" class="input__text input">-->
-        <!--      </fieldset>-->
-
-<!--        <fieldset>-->
-<!--          <legend>Environment</legend>-->
-<!--          <input type="text" name="environment" placeholder="Environment"-->
-<!--                 class="input__text input" v-model="environment_id">-->
-<!--        </fieldset>-->
-
         <fieldset>
           <legend>Requested</legend>
           <input type="text" name="requested" placeholder="Requested" class="input__text input" v-model="requestedBy">
@@ -101,49 +78,7 @@ export default {
       edited_by: '',
       externalUrl: '',
       inProgress: false,
-      actionsList: [
-        // {
-        //   execute_after_seconds: 0,
-        //   type: 'ui',
-        //   enabled: true,
-        //   body: {
-        //     action_name: 'First notification for operator',
-        //     recipients: ['Xen', 'Michail', 'Gena'],
-        //     description: 'asd',
-        //     affected_func: 'asd',
-        //     should_check: ['ads'],
-        //     players_experience: 'asd',
-        //     not_handled_effects: 'ads',
-        //     notification_period: {}
-        //   }
-        // },
-        // {
-        //   execute_after_seconds: 60,
-        //   type: 'teams',
-        //   body: {
-        //     action_name: 'Notification to OPS channel',
-        //     ids: ['some_teams_id', 'another team id'],
-        //     notification_period: {},
-        //     description: 'Teams procedure',
-        //     resubmit: null
-        //   }
-        // },
-        // {
-        //   execute_after_seconds: 10,
-        //   type: 'ui',
-        //   enabled: true,
-        //   body: {
-        //     action_name: 'Additional notification in UI with higher level',
-        //     recipients: ['Guru', 'Andrew', 'Oleksandr'],
-        //     description: 'Something really went wrong but nobody cares',
-        //     affected_func: 'Fuel system',
-        //     should_check: ['Fuel level', 'Prokladka between chair and wheel'],
-        //     players_experience: 'who are the players',
-        //     not_handled_effects: 'Zhope',
-        //     notification_period: {}
-        //   }
-        // }
-      ],
+      actionsList: [],
       lastUpdateTs: '',
       createTs: '',
       tags: [],
@@ -167,23 +102,12 @@ export default {
     if (this.scenarioId > 0) {
       this.loadScenario()
     }
-    // this.actionToShow()
     this.loading = false
     this.v$.$validate()
     console.log('editScenario. beforeMount. $route', this.$route)
   },
   methods: {
     saveScenario () {
-      // this.v$.$validate()
-      // console.log('editScenario. saveScenario. Errors: ', this.v$.$errors)
-      // if (this.formInvalid) {
-      //   alert('Form is invalid')
-      //   console.log('editScenario. saveScenario. Form is invalid')
-      // } else {
-      //   alert('Form is valid')
-      //   console.log('editScenario. saveScenario. Form is valid')
-      // }
-      // return
       console.log('editScenario. save. scenarioObj:', this.actionsList)
       const body = {
         scenario_name: this.scenarioName,

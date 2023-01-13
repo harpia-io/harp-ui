@@ -17,7 +17,11 @@
   <!--Ids list-->
   <div class="scenario-section__block-row">
     <fieldset class="scenario-section__block-row-item full-width">
-      <legend>Webhook:</legend>
+      <legend>Webhook:
+        <a :href="'https://docs.harpia.io/docs/scenarios-overview/webhook'" target="_blank">
+          docs:
+        </a>
+      </legend>
       <webhook-form
         v-for="(webhookObj, index) in actionDetails.webhooks" :key="index"
         :webhook-obj="webhookObj"

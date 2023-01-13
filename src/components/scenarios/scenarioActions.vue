@@ -78,7 +78,7 @@ export default {
           type: 'ui',
           enabled: true,
           body: {
-            action_name: 'New added action',
+            action_name: '',
             recipients: [''],
             description: '',
             affected_func: '',
@@ -206,7 +206,7 @@ export default {
           type: 'webhook',
           enabled: true,
           body: {
-            action_name: 'Restart service: POST',
+            action_name: '',
             webhooks: [
               {
                 url: 'https://your-company.com/remote-actions?max_retries=3&not_working_hours=true',

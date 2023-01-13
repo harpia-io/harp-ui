@@ -26,7 +26,11 @@
     <!--Ids list-->
     <div class="scenario-section__block-row">
       <fieldset class="scenario-section__block-row-item full-width">
-        <legend>Teams Incoming Webhooks:</legend>
+        <legend>Teams Incoming Webhooks:
+          <a :href="'https://docs.harpia.io/docs/scenarios-overview/microsoft-teams'" target="_blank">
+            docs:
+          </a>
+        </legend>
         <teams-id-form
           v-for="(id, index) in actionDetails.ids" :key="index"
           :id="id"

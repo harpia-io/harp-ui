@@ -33,7 +33,7 @@
   <div class="scenario-section__block-row">
     <fieldset class="scenario-section__block-row-item full-width">
       <legend>Signl4 Webhook URLs -
-          <a :href="'https://harpia.io/integration/signl4'" target="_blank">
+          <a :href="'https://docs.harpia.io/docs/scenarios-overview/signl4'" target="_blank">
             docs:
           </a>
       </legend>

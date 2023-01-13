@@ -32,7 +32,11 @@
   <!--Ids list-->
   <div class="scenario-section__block-row">
     <fieldset class="scenario-section__block-row-item full-width">
-      <legend>Telegram Chat Ids:</legend>
+      <legend>Telegram Chat Ids:
+        <a :href="'https://docs.harpia.io/docs/scenarios-overview/telegram'" target="_blank">
+          docs:
+        </a>
+      </legend>
       <telegram-form
         v-for="(id, index) in actionDetails.ids" :key="index"
         :id="id"

@@ -256,8 +256,8 @@ export default {
         })
     },
     prepareForm () {
-      this.visible_only = []
-      this.hidden = []
+      // this.visible_only = []
+      // this.hidden = []
       if (this.envId === 'new') {
         this.envName = ''
         this.description = ''
@@ -271,7 +271,7 @@ export default {
       // console.log('hidden:', this.hidden)
       // console.log('visible_only:', this.visible_only)
       if (this.hidden.includes(String(id))) {
-        // console.log('addEnvironment. onUpdateVisibleOnly. removing env with id:', id)
+        console.log('addEnvironment. onUpdateVisibleOnly. removing env with id:', id)
         const index = this.hidden.findIndex(String(id))
         this.hidden.slice(index, 1)
       }

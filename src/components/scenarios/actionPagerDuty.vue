@@ -32,7 +32,11 @@
   <!--Ids list-->
   <div class="scenario-section__block-row">
     <fieldset class="scenario-section__block-row-item full-width">
-      <legend>PagerDuty Integration Keys:</legend>
+      <legend>PagerDuty Integration Keys:
+        <a :href="'https://docs.harpia.io/docs/scenarios-overview/pagerduty'" target="_blank">
+          docs:
+        </a>
+      </legend>
       <pager-duty-form
         v-for="(id, index) in actionDetails.ids" :key="index"
         :id="id"

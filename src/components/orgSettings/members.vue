@@ -89,18 +89,18 @@
                   </button>
                 </div>
                 <!--Disable-->
-                <div>
-                  <button class="button__icon-transparent" :disabled="userObj.user_id === currentUserProfile.userId"
-                          @click="onBlockUser(userObj.user_id)">
-                    <icon-disable/>
-                  </button>
-                </div>
+<!--                <div>-->
+<!--                  <button class="button__icon-transparent" :disabled="userObj.user_id === currentUserProfile.userId"-->
+<!--                          @click="onBlockUser(userObj.user_id)">-->
+<!--                    <icon-disable/>-->
+<!--                  </button>-->
+<!--                </div>-->
                 <!--Report-->
-                <div>
-                  <button class="button__icon-transparent" disabled>
-                    <icon-report/>
-                  </button>
-                </div>
+<!--                <div>-->
+<!--                  <button class="button__icon-transparent" disabled>-->
+<!--                    <icon-report/>-->
+<!--                  </button>-->
+<!--                </div>-->
                 <!--Reset-->
                 <div>
                   <button class="button__icon-transparent" type="button"
@@ -260,7 +260,7 @@ export default {
         const requestObj = {
           service: 'users',
           path: '/users/block/' + userId,
-          method: 'DELETE',
+          method: 'POST',
           body: null,
           options: {}
         }
