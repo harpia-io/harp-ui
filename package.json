@@ -17,7 +17,7 @@
     "cross-env": "7.0.3",
     "element-plus": "1.0.2-beta.30",
     "lodash": "4.17.21",
-    "luxon": "3.2.0",
+    "luxon": "3.2.1",
     "materialize-css": "1.0.0",
     "moment-timezone": "0.5.40",
     "path": "0.12.7",
