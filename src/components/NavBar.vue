@@ -92,10 +92,16 @@
             <span>Reports</span>
           </button>
           <button @click="toggleStatusPage">
-            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="15" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z" fill="#3C3C3C"/>
             </svg>
             <span>Status Page</span>
+          </button>
+          <button @click="toggleDocs">
+            <svg width="15" height="15" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24.707,7.793l-5.5-5.5C19.019,2.105,18.765,2,18.5,2H7C5.895,2,5,2.895,5,4v22c0,1.105,0.895,2,2,2h16c1.105,0,2-0.895,2-2 V8.5C25,8.235,24.895,7.981,24.707,7.793z M17,23h-7c-0.552,0-1-0.448-1-1s0.448-1,1-1h7c0.552,0,1,0.448,1,1S17.552,23,17,23z M20,19H10c-0.552,0-1-0.448-1-1s0.448-1,1-1h10c0.552,0,1,0.448,1,1S20.552,19,20,19z M20,15H10c-0.552,0-1-0.448-1-1s0.448-1,1-1 h10c0.552,0,1,0.448,1,1S20.552,15,20,15z M19,9c-0.552,0-1-0.448-1-1V3.904L23.096,9H19z" fill="#3C3C3C"/>
+            </svg>
+            <span>Docs</span>
           </button>
           <button @click="logout">
             <svg width="14" height="14" viewbox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,11 +110,7 @@
             </svg>
             Logout
           </button>
-<!--          TODO Delete before go to production-->
-<!--          <button @click="printSettings">-->
-<!--            <span>Print settings</span>-->
-<!--          </button>-->
-          <span class="ui-version">Version: {{ uiVersion }}</span>
+<!--          <span class="ui-version">Version: {{ uiVersion }}</span>-->
         </nav>
       </div>
   </div>
@@ -223,6 +225,9 @@ export default {
     },
     toggleStatusPage () {
       this.$router.push({ name: 'StatusPage' })
+    },
+    toggleDocs () {
+      window.open('https://docs.harpia.io/docs/intro/', '_blank', 'noreferrer')
     }
   }
 }

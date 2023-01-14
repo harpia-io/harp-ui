@@ -171,22 +171,6 @@ const routes = [
     component: () => import('../components/scenarios/editScenario'),
     beforeEnter: ifAuthenticated
   }
-  // {
-  //   path: '/environments_tst',
-  //   name: 'environments_tst',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/env_testing.vue')
-  // },
-  // {
-  //   path: '/environments',
-  //   name: 'environments',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/Environments.vue')
-  // }
 ]
 
 const router = createRouter({
@@ -194,17 +178,5 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
-
-// router.beforeEach((to, from, next) => {
-//   const userObjectRole = store.state.user_object.role
-//   console.log('Router. BeforeEach: ', to)
-//   const requireAuth = to.matched.some(record => record.meta.auth)
-//
-//   if (requireAuth && userObjectRole === 'admin') {
-//     next('/login?message=login')
-//   } else {
-//     next()
-//   }
-// })
 
 export default router

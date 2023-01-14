@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import VueGtag from "vue-gtag";
 import './registerServiceWorker'
 import './styles/element-variables.scss'
 import removeIcon from '@/components/icons/removeIcon'
@@ -31,7 +32,8 @@ const globalSettings = {
 const app = createApp(App, globalSettings).use(store).use(router).use(VueClipboard, {
   autoSetContainer: true,
   appendToBody: true
-}).use(VueColumnsResizable)
+}).use(VueColumnsResizable).use(VueGtag, { config: { id: 'G-L2EBZ0ZF4L' } })
+
 app.component('loading', VueLoading)
 app.component(ElDatePicker.name, ElDatePicker)
 app.component('remove-icon', removeIcon)

@@ -18,7 +18,7 @@ jobs:
     working_directory: ~/workspace
     environment:
       SERVICE_NAME: harp-ui
-      SERVICE_VERSION: v1.1.18
+      SERVICE_VERSION: v1.1.19
       SERVICE_NAMESPACE: dev
     steps:
       - checkout

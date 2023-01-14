@@ -34,7 +34,8 @@
     "vuedraggable": "4.1.0",
     "vuelidate": "0.7.7",
     "vuex": "4.0.0",
-    "yup": "0.32.11"
+    "yup": "0.32.11",
+    "vue-gtag": "2.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.20.7",
