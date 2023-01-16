@@ -115,7 +115,7 @@
         <div class="integrations-dialog__content-body-item integrations-dialog__content-body-item__height">
           <div>5. Go to settings page:</div>
           <div>
-            <a :href="'https://harpia.io/integration/' + integrationToUpdate.integration_type" target="_blank">
+            <a :href="'https://docs.harpia.io/docs/incoming-integrations/' + integrationToUpdate.integration_type" target="_blank">
               docs
             </a>
           </div>
