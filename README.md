@@ -1,4 +1,6 @@
-## Harp Client UI Service
+## Open Source Incident Management system - Harp Client UI Service
+
+### Full info about Project - https://github.com/harpia-io/harpia
 
 ### Intro
 The Client service of Harp Platform
