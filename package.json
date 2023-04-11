@@ -15,7 +15,7 @@
     "@vueuse/core": "4.10.0",
     "core-js": "3.27.1",
     "cross-env": "7.0.3",
-    "element-plus": "1.0.2-beta.30",
+    "element-plus": "2.1.0",
     "lodash": "4.17.21",
     "luxon": "3.2.0",
     "materialize-css": "1.0.0",
